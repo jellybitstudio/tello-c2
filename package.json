@@ -1,0 +1,32 @@
+{
+  "devDependencies": {
+    "turbo": "^1.0.24"
+  },
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "build": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": []
+      },
+      "test": {
+        "dependsOn": [
+          "^build"
+        ],
+        "outputs": []
+      },
+      "lint": {
+        "outputs": []
+      },
+      "dev": {
+        "cache": false
+      }
+    }
+  },
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ]
+}

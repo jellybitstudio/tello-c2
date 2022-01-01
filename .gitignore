@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Turbo Repo
+.turbo
+
+# Just in case
+build
+build/**
+dist/**
+.next/**
